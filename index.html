@@ -6,6 +6,23 @@
       red= document.getElementById("red").value;
       green= document.getElementById("green").value;
       blue= document.getElementById("blue").value;
+        
+        if(red>255)
+      {
+            red="255"
+            document.getElementById("red").value=255;
+      }
+      if(green>255)
+      {
+            green="255"
+            document.getElementById("green").value=255;
+      }
+      if(blue>255)
+      {
+            blue="255"
+            document.getElementById("blue").value=255;
+      }
+        
      var color="rgb("+red+","+green+","+blue+")";
      console.log(color);
      document.getElementById("div").style.backgroundColor= color
