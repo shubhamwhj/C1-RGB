@@ -22,6 +22,21 @@
             blue="255"
             document.getElementById("blue").value=255;
       }
+         if(red<0)
+      {
+            red="0"
+            document.getElementById("red").value=0;
+      }
+      if(green>0)
+      {
+            green="0"
+            document.getElementById("green").value=0;
+      }
+      if(blue>0)
+      {
+            blue="0"
+            document.getElementById("blue").value=0;
+      }
         
      var color="rgb("+red+","+green+","+blue+")";
      console.log(color);
